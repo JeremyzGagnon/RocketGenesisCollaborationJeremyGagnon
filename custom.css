@@ -1,0 +1,40 @@
+p {
+    /* color: red; */
+    font-family: 'Roboto Serif', serif;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0 0 32px 0;
+	color: #0a65a0
+}
+
+section.dark {
+    background-color: #0a65a0 !important;
+    border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+}
+
+.testimonial cite span {
+    display: block;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+#year {
+    color: #a94545;
+}
+
+h3 {
+    font-size: 24px;
+    letter-spacing: normal;
+    margin: 0 0 10px 0;
+}
+
+.step-header {
+    color: none;
+}
+
+#step1 {
+    color: none;
+}

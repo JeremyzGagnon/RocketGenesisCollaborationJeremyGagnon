@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
 		
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
-
+		<!-- Bootstrap CSS -->
 		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
 		<link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
@@ -21,6 +21,11 @@
 
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		<!-- Bootstrap CSS -->
+		<!-- Custom CSS -->
+		<link href="/custom.css" rel="stylesheet" type="text/css" />
+		<!-- /Custom CSS -->
+
 	</head>
 
 	<body class="smoothscroll enable-animation">
@@ -126,8 +131,8 @@
 						<div class="select-building-type card card-default">
 							<div class="card-heading card-heading-transparent">
 								<label for="building-type" class="card-title"> 
-									<h3>
-										<span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 1 |</span> Select Type of Building
+									<h3 class="step-header">
+										<span style="font-weight:bolder" id="step1-color">STEP 1 |</span> Select Type of Building
 									</h3> 
 								</label>
 							</div>
@@ -144,8 +149,8 @@
 						<div class="estimate-num-elv card card-default"  style="display: none;"> 
 							
 							<div class="card-heading step-description">
-								<h3>
-									<span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 2 |</span> Provide Building Information
+								<h3 class="step-header">
+									<span style="font-weight:bolder" id="step2-color">STEP 2 |</span> Provide Building Information
 								</h3>
 							</div>
 
@@ -208,7 +213,7 @@
 
 						<div class="product-line card card-default" style="display: none;">
 							<div class="card-heading card-heading-transparent">
-								<h3><span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 3 |</span> Select Product Line</h3>
+								<h3 class="step-header"><span style="font-weight:bolder" id="step3-color">STEP 3 |</span> Select Product Line</h3>
 								<p style="margin-bottom: 0px;">* Excluding tax and offers (if applicable)</p>
 								<p style="color: rgb(170, 69, 69); display: none; margin-bottom: 0px;" id="warning">Complete Step 2 to Estimate Price</p> 
 							</div>
@@ -241,7 +246,7 @@
 
 						<div class="final-pricing-display card card-default" style="display: none;">
 							<div class="card-heading card-heading-transparent">
-								<h3><span style="color:rgb(10, 101, 160); font-weight:bolder">STEP 4 |</span> Estimated Pricing</h3>
+								<h3 class="step-header"><span style="font-weight:bolder" id="step4-color">STEP 4 |</span> Estimated Pricing</h3>
 								<p style="margin-bottom: 0px;">* Excluding tax and offers (if applicable)</p>
 								<p style="color: rgb(170, 69, 69); display: none; margin-bottom: 0px;" id="warning">Complete Step 2 to Estimate Price</p> 
 							</div>
