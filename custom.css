@@ -1,5 +1,4 @@
 p {
-    /* color: red; */
     font-family: 'Roboto Serif', serif;
 }
 
@@ -38,3 +37,21 @@ h3 {
 #step1 {
     color: none;
 }
+/* Employees */
+#team {
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    box-shadow: 6px 6px 6px inset #444444;
+}
+ /* Margin for the portfolio */
+#portfolio.portfolio-nogutter .row > div, #portfolio.portfolio-nogutter .item-box {
+    padding: 3px !important;
+    margin: 0 !important;
+}
+
+#sidepanel.sidepanel-theme-color, div.alert.alert-theme-color, div.alert.alert-primary, span.badge-default, span.badge-default, .list-group-item.active>.badge.badge-default, .nav-tabs.nav-alternate>li>a.active, .datepicker table tr td.active.active, .callout-theme-color, .progress-bar-primary, .toast-primary, .owl-theme .owl-controls .owl-page span, .pagination>.active>a, .pagination>.active>a:hover, #header li.quick-cart .quick-cart-box a.btn, #header li.quick-cart .quick-cart-box a.btn:hover, #topMain.nav-pills>li.active>a>span.theme-color, .ei-slider-thumbs li.ei-slider-element, .flex-control-paging li a.flex-active, .tp-caption.block_theme_color, .tp-bullets.simplebullets.round .bullet.selected, i.ico-color, .caption-primary, .shop-list-options .btn.active, .box-static.box-color, .switch.switch-primary > input:checked + .switch-label, .fancy-file-upload.fancy-file-primary>span.button, .primary-slider .ui-slider .ui-slider-handle:before, .primary-slider .ui-slider .ui-slider-range, .ribbon-inner, .info-bar.info-bar-color, .music-album-title:hover, .inews-item .inews-thumbnail .inews-sticky, #progressBar #bar, #page-menu, #page-menu ul {
+    background-color: white;
+}
+
+

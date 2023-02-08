@@ -331,7 +331,7 @@
 					</div>
 				</div>
 			</section>
-
+			<!-- Portfolio -->
 			<section id="portfolio">
 				<div class="container">
 					<div class="heading-title heading-dotted text-center">
@@ -351,10 +351,10 @@
 						<div class="row mix-grid">
 
 							<div class="col-md-3 col-sm-3 mix commercial">
-								<div class="item-box">
+								<div class="item-box" id="item-box1" >
 									<figure>
 										
-											<img class="img-fluid" src="assets/images/rocketElevators/comPortfolio5.jpeg" width="600" height="399" alt="">
+											<img class="img-fluid" src="assets/images/rocketElevators/comPortfolio5.jpeg" width="600" height="399"  alt="" style="margin-right: 100px;">
 										
 									</figure>
 									<div class="item-box-desc">
@@ -553,7 +553,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- /Portfolio -->
 
+			<!-- Employee -->
 			<section id="team" class="section-xs dark">
 				<div class="container">
 					<div class="owl-carousel text-center owl-testimonial m-0" data-plugin-options='{"singleItem": true, "autoPlay": 3500, "navigation": false, "pagination": true, "transitionStyle":"fade"}'>
@@ -586,6 +588,8 @@
 					</div>
 				</div>
 			</section>
+			<!-- /Employee -->
+
 
 			<section id="news">
 				<div class="container">
@@ -795,11 +799,11 @@
 									<div class="row">
 											<div class="col-md-4">
 												<label for="name">Full Name</label>
-												<input id="name" type="text" value="" class="form-control" name="contact[name]">
+												<input id="name" type="text" value="" class="form-control" name="contact[name]" required>
 											</div>
 											<div class="col-md-4">
 												<label for="email">E-mail Address</label>
-												<input id="email" type="email" value="" class="form-control" name="contact[email]">
+												<input id="email" type="email" value="" class="form-control" name="contact[email]" required>
 											</div>
 											<div class="col-md-4">
 												<label for="phone">Phone</label>
@@ -839,7 +843,7 @@
 									<div class="row">
 											<div class="col-md-12">
 												<label for="attachment">File Attachment</label>
-												<input id="attachment" class="custom-file-upload" type="file" name="contact[attachment]"  data-btn-text="Select a File" />
+												<input id="attachment" class="custom-file-upload" type="file" name="contact[attachment]"  data-btn-text="Select a File" accept="image/*"/>
 												<small class="text-muted block">
                                                     Max file size: 10Mb (zip/pdf/jpg/png)
                                                 </small>
