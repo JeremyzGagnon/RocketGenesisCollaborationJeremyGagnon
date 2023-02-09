@@ -8,6 +8,13 @@ h2 {
 	color: #0a65a0
 }
 
+#portfolio h2{
+    font-size: 30px;
+    line-height: 20px;
+    margin: 0;
+    color: #0a65a0;
+}
+
 section.dark {
     background-color: #0a65a0 !important;
     border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
@@ -22,6 +29,11 @@ section.dark {
 
 #year {
     color: #a94545;
+    font-size: xx-large;
+}
+
+#step1-color,  #step2-color, #step3-color, #step4-color{
+    color: #0a65a0;
 }
 
 h3 {
@@ -57,5 +69,15 @@ h3 {
 table, th, td {
     border:1px solid black;
   }
+
+#home-nav, #services-nav, #residential-nav, #commercial-nav, #portfolio-nav, #news-nav, #clients-nav, #quote-nav, #contact-nav, h1, h2 {
+    font-family: 'Lato', sans-serif;
+}
   
 
+#footer {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    background: #0965a0;
+}

@@ -5,9 +5,7 @@ let fee = document.querySelectorAll(".fee");
 
 let top_tier = [];
 
-const send_button = document.getElementById(send-message);
 
-let 
 
 
 
@@ -44,20 +42,4 @@ fetch("http://99.79.77.144:3000/api/agents", {
 })
 .catch(res => console.error(res.status))
 
-// POST method
-send_button.addEventListener('click', function() {
-    fetch("http://99.79.77.144:3000/api/contact", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: { "Content-Type": "application/json" }})
-        .then((response) => response.json())
-        .then((data) => {
-            // Manipuler les data
-            window.alert('Success:', data);
-        })
-        .catch( (error) => {
-            window.alert( 'Error:', error);
-        });
-    }
-)
 

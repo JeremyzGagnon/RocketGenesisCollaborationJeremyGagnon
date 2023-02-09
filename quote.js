@@ -210,36 +210,22 @@ buildingType_select.addEventListener("change", function () {
     if (buildingType == "---Select---") {
         resetForm();
     } else {
-        // console.log("THE BUILDING TYPE IS:" + buildingType)
         if (buildingType == 'residential') {
-            // Test
-            document.getElementById("step1-color").style.color = "#AFEEEE";
-            document.getElementById("step2-color").style.color = "#AFEEEE";
-            document.getElementById("step3-color").style.color = "#AFEEEE";
-            document.getElementById("step4-color").style.color = "#AFEEEE";
             let step_headers = document.querySelectorAll(".step-header");
             for(let i = 0; i < step_headers.length; i++) {
                 step_headers[i].style.color = "#AFEEEE";
             }
         }
         else if (buildingType == 'commercial') {
-            document.getElementById("step1-color").style.color = "#CD5C5C";
-            document.getElementById("step2-color").style.color = "#CD5C5C";
-            document.getElementById("step3-color").style.color = "#CD5C5C";
-            document.getElementById("step4-color").style.color = "#CD5C5C";
             let step_headers = document.querySelectorAll(".step-header");
             for(let i = 0; i < step_headers.length; i++) {
                 step_headers[i].style.color = "#CD5C5C";
             }
         }
         else if (buildingType == 'industrial') {
-            document.getElementById("step1-color").style.color = "#778899";
-            document.getElementById("step2-color").style.color = "#778899";
-            document.getElementById("step3-color").style.color = "#778899";
-            document.getElementById("step4-color").style.color = "#778899";
             let step_headers = document.querySelectorAll(".step-header");
             for(let i = 0; i < step_headers.length; i++) {
-                step_headers[i].style.color = "#778899";
+                step_headers[i].style.color = "#414141";
             }
 
         }

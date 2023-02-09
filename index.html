@@ -13,7 +13,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Roboto+Serif:opsz,wght@8..144,100&display=swap" rel="stylesheet">
 		<!-- /Google Font -->
 		<!-- CSS Boostrap -->
 		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -55,6 +55,7 @@
 							<img src="assets/images/rocketElevators/rocketLogo.png" alt="" />
 						</a>
 						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<!-- NAV -->
 							<nav class="nav-main">
 
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
@@ -104,6 +105,8 @@
 								</ul>
 
 							</nav>
+							<!-- /NAV -->
+
 						</div>
 
 					</div>
@@ -324,7 +327,7 @@
 				<div class="overlay dark-7"></div>
 				<div class="container">
 					<div class="text-center">
-						<h2 class="fs-40 fw-300"><strong>Elevating Innovation, Safety, & Style since <em id="year">1976</em></strong></h2>
+						<h2 class="fs-40 fw-300"><strong>Elevating Innovation, Safety, & Style since <b id="year">1976</b></strong></h2>
 						<a class="btn btn-outline-primary btn-lg" href="quote.html">REQUEST QUOTE <i class="fa fa-angle-right"></i></a> 
 						&nbsp; OR &nbsp; 
 						<a class="btn btn-outline-danger btn-lg" href="#contact">CONTACT US <i class="fa fa-angle-right"></i></a>
@@ -809,27 +812,27 @@
 											</div>
 											<div class="col-md-4">
 												<label for="phone">Phone</label>
-												<input id="phone" type="text" value="" class="form-control" name="contact[phone]">
+												<input id="phone" type="text" value="" class="form-control" name="contact[phone]" required>
 											</div>
 									</div>
                                     <div class="row">
                                         <div class="col-md-6">
                                             <label for="company_name">Company Name</label>
-                                            <input id="name"  type="text" value="" class="form-control" name="contact[name]">
+                                            <input id="company-name"  type="text" value="" class="form-control" name="contact[name]" required>
                                         </div>
                                         <div class="col-md-6">
                                             <label for="project_name">Project Name</label>
-                                            <input id="project_name"  type="text" value="" class="form-control" name="contact[name]">
+                                            <input id="project_name"  type="text" value="" class="form-control" name="contact[name]" required>
                                         </div>
                                     </div>
 									<div class="row">
 											<div class="col-md-6">
                                                 <label for="project_description">Project Description</label>
-												<input id="project_description"  type="text" value="" class="form-control" name="contact[subject]">
+												<input id="project_description"  type="text" value="" class="form-control" name="contact[subject]" required>
 											</div>
 											<div class="col-md-6">
 												<label for="department">Department</label>
-												<select id="department" class="form-control pointer" name="contact[department]">
+												<select id="department" class="form-control pointer" name="contact[department]" required>
 													<option value="">--- Select ---</option>
 													<option value="Marketing">Commercial</option>
 													<option value="Webdesign">Residential</option>
@@ -839,7 +842,7 @@
 									<div class="row">
 											<div class="col-md-12">
 												<label for="message">Message</label>
-												<textarea id="message"  maxlength="10000" rows="8" class="form-control" name="contact[message]"></textarea>
+												<textarea id="message"  maxlength="10000" rows="8" class="form-control" name="contact[message]" required></textarea>
 											</div>
 									</div>
 									<div class="row">
@@ -887,7 +890,7 @@
 										<li>Wednesday: 9:00 - 17:00</li>
 										<li>Thursday: 9:00 - 17:00</li>
 										<li>Friday: 9:00 - 17:00</li>
-										<b><li>Saturday: 12:00 - 17:00</li></b>
+										<b><li>Saturday: <em>12:00 - 17:00</em></li></b>
 									</ul>
 								</span>
 							</p>
