@@ -82,16 +82,10 @@ table, th, td {
     background: #0965a0;
 }
 
-/* Residential and Commercial agent table */
+/* Residential and Commercial agent table fix */
 
 .table-heading {
     background-color: rgb(10, 101, 160);
     color: white;
 }
-
-/* Filter Table */
-
-/* .hide-fname, .hide-lname, .hide-rating, .hide-fee, .hide-region {
-    
-} */
 

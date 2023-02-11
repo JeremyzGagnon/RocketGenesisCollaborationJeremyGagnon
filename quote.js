@@ -1,5 +1,4 @@
-"use strict";
-
+// Variables declarations
 let buildingType_select = document.getElementById("building-type");
 let buildingType =
     buildingType_select.options[buildingType_select.selectedIndex].value;
@@ -69,7 +68,7 @@ const installPercentFees = {
     excelium: 20,
 };
 
-// CALCULATIONS
+// Computation for the number of elevators
 function calcResidentialElev(numFloors, numApts) {
     const elevatorsRequired = Math.ceil(numApts / numFloors / 6)*Math.ceil(numFloors / 20);
     console.log(elevatorsRequired)
@@ -80,7 +79,7 @@ function calcCommercialElev(numFloors, maxOccupancy) {
     const freighElevatorsRequired = Math.ceil(numFloors / 10);
     return freighElevatorsRequired + elevatorsRequired;
 }
-
+// Computation of the install fee
 function calcInstallFee(totalPrice, installPercentFee) {
     return (installPercentFee / 100) * totalPrice;
 }
@@ -129,7 +128,7 @@ function displayBuildingFields(buildingType) {
     productLineSelection_div.style.display = "block";
     finalPricingDisplay_div.style.display = "block";
 }
-
+// Compute the amount of computer depending of the building type by calling their appropriate functions
 function displayElvCalcResult(buildingType) {
     let calculatedElv;
     if (buildingType == "commercial") {
@@ -187,7 +186,7 @@ function updatePricingDisplay() {
         }
     }
 }
-
+// Checks if the user entered everything required
 function allBuildingFieldsCompleted(buildingType) {
     for (let fieldID of buildingTypeFields[buildingType]) {
         if (
@@ -209,6 +208,7 @@ buildingType_select.addEventListener("change", function () {
     buildingType = this.value;
     if (buildingType == "---Select---") {
         resetForm();
+        // Change color of step headers
     } else {
         if (buildingType == 'residential') {
             let step_headers = document.querySelectorAll(".step-header");
@@ -229,6 +229,7 @@ buildingType_select.addEventListener("change", function () {
             }
 
         }
+
         displayBuildingFields(buildingType);
         estimateNumElv_div.addEventListener("change", function () {
             if (!allBuildingFieldsCompleted(buildingType)) {

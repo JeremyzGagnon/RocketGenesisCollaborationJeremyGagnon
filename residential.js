@@ -1,9 +1,9 @@
+// Variables declarations
 let first_name = document.querySelectorAll(".first-name");
 let last_name = document.querySelectorAll(".last-name");
 let rating = document.querySelectorAll(".ratings");
 let fee = document.querySelectorAll(".fee");
 let region = document.querySelectorAll(".region");
-
 let top_tier = [];
 
 // GET method
@@ -40,8 +40,7 @@ fetch("http://99.79.77.144:3000/api/agents", {
 })
 .catch(res => console.error(res.status))
 
-// Sorts the table
-
+// Sorts the table by first and last name
 function sortTable(n) {
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
     table = document.getElementById("table");
@@ -97,6 +96,8 @@ function sortTable(n) {
     }
   }
 
+// Filter the table by regions
+
 function filterTable() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("myInput");
@@ -115,5 +116,46 @@ function filterTable() {
     }       
   }
 }
+
+// With button
+// function filterTableNorth() {
+//   var input, filter, table, tr, td, i, txtValue;
+//   input = document.querySelector(".myInput2").value;
+//   filter = input.toUpperCase();
+//   table = document.getElementById("table");
+//   tr = table.getElementsByTagName("tr");
+//   for (i = 0; i < tr.length; i++) {
+//     td = tr[i].getElementsByTagName("td")[4];
+//     if (td) {
+//       txtValue = td.textContent || td.innerText;
+//       if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//         tr[i].style.display = "";
+//       } else {
+//         tr[i].style.display = "none";
+//       }
+//     }       
+//   }
+// }
+
+// function filterTableSouth() {
+//   var input, filter, table, tr, td, i, txtValue;
+//   input = document.querySelector(".myInput3").value;
+//   console.log(input)
+//   filter = input.toUpperCase();
+//   table = document.getElementById("table");
+//   tr = table.getElementsByTagName("tr");
+//   for (i = 0; i < tr.length; i++) {
+//     td = tr[i].getElementsByTagName("td")[4];
+//     if (td) {
+//       txtValue = td.textContent || td.innerText;
+//       if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//         tr[i].style.display = "";
+//       } else {
+//         tr[i].style.display = "none";
+//       }
+//     }       
+//   }
+// }
+
 
   

@@ -309,14 +309,17 @@
 					<h2 class="">Our best agents...</h2>
 					<table id="table" class="table">
 						  <tr>
+
 							<th onclick="sortTable(0)" scope="col" class="table-heading hide-fname">First Name</th>
 							<th onclick="sortTable(1)" scope="col" class="table-heading hide-lname">Last Name</th>
 							<th scope="col" class="table-heading hide-rating">Rating</th>
 							<th scope="col" class="table-heading hide-fee">Fee</th>
 							<th  scope="col" class="table-heading hide-region">Region
-								<!-- <input onclick="filterTable('North')" id="north-btn" type="button" value="North" style="margin-left: 1em;">   
-								<input onclick="filterTable('South')" id="south-btn" type="button" value="South" style="margin-left: 1em;">                 -->
-								<input style="margin-left: 20px;" type="text" id="myInput" onkeyup="filterTable()" placeholder="Search for region..">
+							<input style="margin-left: 20px;" type="text" id="myInput" onkeyup="filterTable()" placeholder="Filter by region..">
+							<!-- <input style="margin-left: 20px;" type="button" value="north" class="myInput2" onclick="filterTableNorth()" placeholder="Filter by region..">
+							<input style="margin-left: 20px;" type="button" value="south" class="myInput3" onclick="filterTableSouth()" placeholder="Filter by region..">
+							<input style="margin-left: 20px;" type="button" value="reset" class="myInput4" onclick="reset()" placeholder="Filter by region.."> -->
+
 							</th>
 						  </tr>
 						  <tr id="row1">

@@ -1,9 +1,7 @@
 const form = document.getElementById("contact-form");
 
-// POST method
+// POST method for the contact form
 form.addEventListener('submit', function(event) {
-
-    // event.preventDefault()
 
     let user = {
       fullname: document.getElementById("name").value,
